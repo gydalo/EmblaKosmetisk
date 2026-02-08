@@ -15,16 +15,18 @@ export default function Home() {
 
   return (
     <div className="home-snap" ref={scrollerRef}>
-      <div className="header-hero-100vh snap" id="top">
-        <Header onNavigate={scrollToId} />
+      <Header onNavigate={scrollToId} />
+
+      <section className="snap" id="top">
         <Hero />
-      </div>
+      </section>
 
       <section className="snap" id="welcome">
         <HomeSplitSection />
       </section>
 
       <section className="snap" id="behandlinger">
+        {/* content later */}
       </section>
     </div>
   );

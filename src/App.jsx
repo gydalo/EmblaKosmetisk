@@ -5,8 +5,6 @@ import Botox from "./pages/behandlinger/Botox";
 export default function App() {
   return (
     <Router>
-
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/behandlinger/botox" element={<Botox />} />
