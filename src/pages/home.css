@@ -1,0 +1,20 @@
+.header-hero-100vh {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-hero-100vh .hero {
+  flex: 1;
+}
+
+.home-snap {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.snap {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}

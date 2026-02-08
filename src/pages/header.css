@@ -1,0 +1,152 @@
+/* 
+   SITE HEADER (TOPBAR + HERO = 100vh)
+ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+}
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: #222;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.main-nav button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #222;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  font-family: "Italiana", serif;
+}
+.main-nav button:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+/* 
+   HERO
+ */
+
+.hero {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.18),
+      rgba(0, 0.5, 0.65, 1)
+    ),
+    radial-gradient(
+      900px 400px at 10% 50%,
+      rgba(255, 255, 255, 0.12),
+      rgba(0, 0, 0, 0.6) 50%
+    );
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  height: 100%;
+  padding: 80px 18px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p {
+  margin: 0;
+}
+
+/* Left side */
+.hero-logo {
+  max-width: 220px;
+}
+
+/* Right side */
+.hero-right {
+  max-width: 420px;
+  margin-top: -20px;
+}
+
+.hero-right-text {
+  margin-bottom: 40px;
+}
+
+.hero-left {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.hero-right p {
+  font-family: "Italiana", serif;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #ffffff;
+}
+
+.hero-lead {
+  margin-top: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 64px 18px;
+  }
+
+  .main-nav {
+    gap: 18px;
+  }
+}
