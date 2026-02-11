@@ -35,6 +35,18 @@ p {
   line-height: 1.6;
 }
 
+/* Om button */
+.home-split__btn {
+  display: inline-block;
+  background: #52694a;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  font-family: "Italiana", serif;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
 /* Booking button */
 .booking-btn {
   background: #52694a;
@@ -55,12 +67,9 @@ p {
   text-decoration: none;
 }
 
-.hero-btn:hover {
-  background: #74876e;
-  cursor: pointer;
-}
-
-.booking-btn:hover {
+.hero-btn:hover,
+.booking-btn:hover,
+.home-split__btn:hover {
   background: #74876e;
   cursor: pointer;
 }

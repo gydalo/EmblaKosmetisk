@@ -1,0 +1,47 @@
+.footer {
+  background: #6b5a53;
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 20px 40px;
+}
+
+.footer__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 28px;
+}
+
+.footer__info {
+  font-family: "Palanquin", sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 36px;
+}
+
+.footer__name {
+  font-family: "Italiana", serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 10px;
+}

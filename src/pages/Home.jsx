@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HomeSplitSection from "../components/HomeSplitSection";
 import "./home.css";
+import Footer from "../components/Footer";
+import Behandlinger from "../components/Behandlinger";
 
 export default function Home() {
   const scrollerRef = useRef(null);
@@ -26,8 +28,11 @@ export default function Home() {
       </section>
 
       <section className="snap" id="behandlinger">
-        {/* content later */}
+        <Behandlinger />
       </section>
+
+      <Footer />
     </div>
+
   );
 }

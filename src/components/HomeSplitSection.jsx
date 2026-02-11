@@ -20,7 +20,7 @@ export default function HomeSplitSection() {
             behandlinger, med ro og naturlig velvære.
           </p>
 
-          <a className="home-split__btn" href="/om-meg">
+          <a className="home-split__btn" href="/om">
             Om
           </a>
         </div>

@@ -52,16 +52,7 @@
   opacity: 0.9;
 }
 
-.home-split__btn {
-  display: inline-block;
-  background: #6c7f64;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 22px;
-  font-family: "Italiana", serif;
-  letter-spacing: 0.08em;
-  font-size: 13px;
-}
+
 
 /* Responsive */
 @media (max-width: 900px) {
