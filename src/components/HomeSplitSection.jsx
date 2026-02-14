@@ -5,7 +5,7 @@ export default function HomeSplitSection() {
     <section className="home-split" aria-label="Velkommen-seksjon">
       <div className="home-split__image" aria-hidden="true">
         <img
-          src="/public/images/theskin.jpg"
+          src="/images/theskin.jpg"
           alt=""
           className="home-split__img"
         />
