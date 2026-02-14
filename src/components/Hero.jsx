@@ -5,7 +5,7 @@ export default function Hero() {
     <section
       className="hero"
       style={{
-        backgroundImage: 'url("/public/images/Header-rosa-rafael.jpg")',
+        backgroundImage: 'url("/images/Header-rosa-rafael.jpg")',
       }}
     >
       <div className="hero-overlay" />
@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-left">
           <img
-            src="/public/images/Embla_Kosmetisk-01.png"
+            src="/images/Embla_Kosmetisk-01.png"
             alt="Embla Kosmetisk Sykepleier"
             className="hero-logo"
           />
