@@ -10,9 +10,28 @@ export default function Home() {
   const scrollerRef = useRef(null);
 
   const scrollToId = (id) => {
+    const scroller = scrollerRef.current;
     const el = document.getElementById(id);
-    if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (!scroller || !el) return;
+
+    scroller.classList.add("snap-disabled");
+
+    const header = document.querySelector(".site-header");
+    const headerH = header ? header.offsetHeight : 0;
+
+    const y =
+      el.getBoundingClientRect().top -
+      scroller.getBoundingClientRect().top +
+      scroller.scrollTop;
+
+    scroller.scrollTo({
+      top: Math.max(0, y - headerH),
+      behavior: "smooth",
+    });
+
+    window.setTimeout(() => {
+      scroller.classList.remove("snap-disabled");
+    }, 450);
   };
 
   return (
@@ -33,6 +52,5 @@ export default function Home() {
 
       <Footer />
     </div>
-
   );
 }

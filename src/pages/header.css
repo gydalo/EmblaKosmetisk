@@ -18,6 +18,12 @@
   justify-content: space-between;
 }
 
+.topbar {
+  position: relative;
+  z-index: 10000;
+}
+
+
 /* Logo */
 .logo img {
   height: 40px;
@@ -203,6 +209,15 @@
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+.mobile-nav {
+  position: relative;
+  z-index: 10001;
+}
+
+.menu-overlay {
+  z-index: 9990;
+}
+
 .mobile-nav button:first-child {
   border-top: 0;
 }
@@ -240,21 +255,16 @@
   .hero-logo {
     max-width: 220px;
   }
-
-  .main-nav {
-    gap: 18px;
-  }
-
-  /* Hide desktop nav + desktop booking */
-  .main-nav {
+ .main-nav {
     display: none;
   }
 
+  /* booking button still visible on all pages */
   .booking-btn--desktop {
-    display: none;
+    display: inline-block;
   }
 
-  /* Show hamburger + mobile dropdown */
+  /* show hamburger only when it exists (we render it only on Home) */
   .hamburger {
     display: inline-flex;
     align-items: center;
@@ -265,18 +275,21 @@
     display: block;
     max-height: 0;
     overflow: hidden;
-
     padding: 0 18px;
     border-bottom: 0;
-
     background: #fff;
-    transition: max-height 220ms ease, padding 220ms ease,
-      border-bottom 220ms ease;
+    transition: max-height 220ms ease, padding 220ms ease, border-bottom 220ms ease;
   }
 
   .mobile-nav.is-open {
-    max-height: 360px;
+    max-height: 420px;
     padding: 10px 18px 18px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  /* mobile booking inside menu only (optional) */
+  .booking-btn--mobile {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -1,13 +1,22 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../pages/header.css";
 
 export default function Header({ onNavigate }) {
   const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   const go = (id) => {
+    if (!isHome) return;
     onNavigate?.(id);
     setOpen(false);
   };
+
+  // Close when route changes
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   // Close with Escape
   useEffect(() => {
@@ -22,15 +31,54 @@ export default function Header({ onNavigate }) {
     <header className="site-header">
       <div className="topbar">
         <div className="topbar-inner">
-          <a href="/" className="logo" onClick={() => setOpen(false)}>
+          <Link to="/" className="logo" onClick={() => setOpen(false)}>
             <img
               src="/images/Embla_Kosmetisk-02.png"
               alt="Embla Kosmetisk Sykepleier"
             />
-          </a>
+          </Link>
 
-          {/* Desktop nav */}
-          <nav className="main-nav">
+          {/* NAV only on Home */}
+          {isHome && (
+            <nav className="main-nav" aria-label="Hovedmeny">
+              <button type="button" onClick={() => go("welcome")}>
+                Om
+              </button>
+              <button type="button" onClick={() => go("behandlinger")}>
+                Behandlinger
+              </button>
+              <button type="button" onClick={() => go("gavekort")}>
+                Gavekort
+              </button>
+            </nav>
+          )}
+
+          {/* CTA always visible */}
+          {!isHome && (
+            <a href="/booking" className="booking-btn booking-btn--desktop">
+              Booking
+            </a>
+          )}
+
+          {/* Hamburger only on Home + small screens */}
+          {isHome && (
+            <button
+              type="button"
+              className={`hamburger ${open ? "is-open" : ""}`}
+              aria-label={open ? "Lukk meny" : "Åpne meny"}
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
+            >
+              <span className="hamburger__bar" />
+              <span className="hamburger__bar" />
+              <span className="hamburger__bar" />
+            </button>
+          )}
+        </div>
+
+        {/* Mobile dropdown only on Home */}
+        {isHome && (
+          <div className={`mobile-nav ${open ? "is-open" : ""}`}>
             <button type="button" onClick={() => go("welcome")}>
               Om
             </button>
@@ -40,51 +88,20 @@ export default function Header({ onNavigate }) {
             <button type="button" onClick={() => go("gavekort")}>
               Gavekort
             </button>
-          </nav>
 
-          {/* Desktop booking */}
-          <a href="/booking" className="booking-btn booking-btn--desktop">
-            Booking
-          </a>
-
-          {/* Mobile hamburger */}
-          <button
-            type="button"
-            className={`hamburger ${open ? "is-open" : ""}`}
-            aria-label="Åpne meny"
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span className="hamburger__bar" />
-            <span className="hamburger__bar" />
-            <span className="hamburger__bar" />
-          </button>
-        </div>
-
-        {/* Mobile dropdown */}
-        <div className={`mobile-nav ${open ? "is-open" : ""}`}>
-          <button type="button" onClick={() => go("welcome")}>
-            Om
-          </button>
-          <button type="button" onClick={() => go("behandlinger")}>
-            Behandlinger
-          </button>
-          <button type="button" onClick={() => go("gavekort")}>
-            Gavekort
-          </button>
-
-          <a
-            href="/booking"
-            className="booking-btn booking-btn--mobile"
-            onClick={() => setOpen(false)}
-          >
-            Booking
-          </a>
-        </div>
+            <a
+              href="/booking"
+              className="booking-btn booking-btn--mobile"
+              onClick={() => setOpen(false)}
+            >
+              Booking
+            </a>
+          </div>
+        )}
       </div>
 
-      {/* Click-outside overlay (mobile) */}
-      {open && (
+      {/* Overlay only on Home */}
+      {isHome && open && (
         <button
           className="menu-overlay"
           aria-label="Lukk meny"

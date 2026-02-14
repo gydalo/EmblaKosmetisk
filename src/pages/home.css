@@ -18,3 +18,7 @@
   scroll-snap-align: start;
   min-height: calc(100vh - 64px);
 }
+
+.home-snap.snap-disabled {
+  scroll-snap-type: none !important;
+}
