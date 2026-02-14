@@ -1,5 +1,5 @@
 .home-split {
-    background: #402e25;
+  background: #402e25;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -54,17 +54,16 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-.home-split {
+  .home-split {
     display: grid;
     grid-template-columns: 1fr;
-    min-height: auto;    
+    min-height: auto;
   }
 
   .home-split__image {
-    height: 45vh;          
+    height: 60vh;
     min-height: 280px;
-    max-height: 420px;
-    background: #402e25;   
+    background: #402e25;
   }
 
   .home-split__panel {
