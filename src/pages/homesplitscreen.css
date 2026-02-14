@@ -22,7 +22,7 @@
 
 /* Left panel */
 .home-split__panel {
-  background: #614b47;
+  background: #402e25;
   color: #fff;
   display: flex;
   align-items: center;
@@ -51,8 +51,6 @@
   margin: 0 0 26px;
   opacity: 0.9;
 }
-
-
 
 /* Responsive */
 @media (max-width: 900px) {
