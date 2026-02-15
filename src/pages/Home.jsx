@@ -50,7 +50,9 @@ export default function Home() {
         <Behandlinger />
       </section>
 
-      <Footer />
+     <section className="snap snap-last" id="footer">
+  <Footer />
+</section>
     </div>
   );
 }

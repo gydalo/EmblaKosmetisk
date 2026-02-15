@@ -8,17 +8,39 @@
   flex: 1;
 }
 
+/* Use the visible viewport on mobile */
 .home-snap {
-  height: 100vh;
+  height: 100dvh;      
+  height: 100vh;      
   overflow-y: auto;
   scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
 }
+
+
+:root {
+  --header-h: 64px;
+}
+
 
 .snap {
   scroll-snap-align: start;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100dvh - var(--header-h));
+  min-height: calc(100vh - var(--header-h));
+  scroll-snap-stop: always;
 }
+
 
 .home-snap.snap-disabled {
   scroll-snap-type: none !important;
+}
+
+
+.snap-last {
+  scroll-snap-align: start;
+  min-height: calc(100dvh - var(--header-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #402e25;
 }
