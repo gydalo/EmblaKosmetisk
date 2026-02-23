@@ -19,7 +19,6 @@
   scroll-snap-align: start;
   scroll-snap-stop: normal;
   min-height: calc(100dvh - var(--header-h));
-  padding-bottom: max(16px, env(safe-area-inset-bottom));
 }
 
 .snap-long {
