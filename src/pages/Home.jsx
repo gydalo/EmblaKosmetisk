@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HomeSplitSection from "../components/HomeSplitSection";
@@ -9,6 +9,27 @@ import Behandlinger from "../components/Behandlinger";
 export default function Home() {
   const scrollerRef = useRef(null);
 
+  useEffect(() => {
+    const setHeaderH = () => {
+      const header = document.querySelector(".site-header");
+      const h = header ? header.offsetHeight : 0;
+      document.documentElement.style.setProperty("--header-h", `${h}px`);
+    };
+
+    setHeaderH();
+
+    window.addEventListener("resize", setHeaderH);
+
+    const t1 = window.setTimeout(setHeaderH, 50);
+    const t2 = window.setTimeout(setHeaderH, 300);
+
+    return () => {
+      window.removeEventListener("resize", setHeaderH);
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+    };
+  }, []);
+
   const scrollToId = (id) => {
     const scroller = scrollerRef.current;
     const el = document.getElementById(id);
@@ -16,18 +37,7 @@ export default function Home() {
 
     scroller.classList.add("snap-disabled");
 
-    const header = document.querySelector(".site-header");
-    const headerH = header ? header.offsetHeight : 0;
-
-    const y =
-      el.getBoundingClientRect().top -
-      scroller.getBoundingClientRect().top +
-      scroller.scrollTop;
-
-    scroller.scrollTo({
-      top: Math.max(0, y - headerH),
-      behavior: "smooth",
-    });
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
 
     window.setTimeout(() => {
       scroller.classList.remove("snap-disabled");
@@ -46,13 +56,13 @@ export default function Home() {
         <HomeSplitSection />
       </section>
 
-      <section className="snap" id="behandlinger">
+      <section className="snap snap-long" id="behandlinger">
         <Behandlinger />
       </section>
 
-     <section className="snap snap-last" id="footer">
-  <Footer />
-</section>
+      <section className="snap-footer" id="footer">
+        <Footer />
+      </section>
     </div>
   );
 }
