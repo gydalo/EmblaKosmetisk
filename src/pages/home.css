@@ -40,3 +40,9 @@
   min-height: calc(100dvh - var(--header-h));
   min-height: auto;
 }
+
+@media (max-width: 900px) {
+  .home-snap {
+    scroll-snap-type: y proximity;
+  }
+}
