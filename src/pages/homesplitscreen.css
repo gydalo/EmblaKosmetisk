@@ -68,8 +68,7 @@
   }
 
   .home-split__panel {
-    padding: 44px 50px;
-    padding-bottom: calc(100px + env(safe-area-inset-bottom));
+    padding: 44px 20px;
   }
 
   .home-split__title {
