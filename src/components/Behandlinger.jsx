@@ -1,4 +1,6 @@
 import "../pages/behandlinger.css";
+import { Link } from "react-router-dom";
+import "../pages/button.css";
 
 const DATA = [
   {
@@ -48,9 +50,9 @@ export default function Behandlinger() {
         </div>
 
         <div className="behandlinger__ctaWrap">
-          <a href="/booking" className="behandlinger__cta">
-            Book her
-          </a>
+            <Link to="/booking" className="primary-btn">
+              Book her
+            </Link>
         </div>
       </div>
     </section>

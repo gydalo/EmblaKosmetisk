@@ -1,4 +1,7 @@
 import "../pages/header.css";
+import "../pages/button.css";
+import { Link } from "react-router-dom";
+
 
 export default function Hero() {
   return (
@@ -30,9 +33,9 @@ export default function Hero() {
             <p className="hero-lead">Få det lille ekstra!</p>
           </div>
           <div className="hero-right-cta">
-            <a href="/booking" className="hero-btn">
+            <Link to="/booking" className="primary-btn">
               Book time eller gratis konsultasjon
-            </a>
+            </Link>
           </div>
         </div>
       </div>

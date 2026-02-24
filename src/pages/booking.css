@@ -1,0 +1,46 @@
+.booking {
+  background: #f3efe6;
+  padding: 80px 18px 90px;
+}
+
+.booking__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking__title {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* The box */
+.booking__frameWrap {
+  width: min(740px, 100%);
+  margin: 0 auto;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.booking__frame {
+  display: block;
+  width: 100%;
+  height: 1046px; 
+  border: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .booking__title {
+    font-size: 32px;
+  }
+
+  .booking__frame {
+    height: 980px; 
+  }
+}

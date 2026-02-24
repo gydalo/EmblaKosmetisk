@@ -1,5 +1,6 @@
 import "../pages/homesplitscreen.css";
 import { Link } from "react-router-dom";
+import "../pages/button.css";
 
 export default function HomeSplitSection() {
   return (
@@ -16,7 +17,7 @@ export default function HomeSplitSection() {
             Hudpleieklinikk i hjertet av Forus. Her finner du hudforbedrende
             behandlinger, med ro og naturlig velvære.
           </p>
-          <Link className="home-split__btn" to="/om">
+          <Link className="primary-btn" to="/om">
             Om
           </Link>
         </div>

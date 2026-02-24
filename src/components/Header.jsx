@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../pages/header.css";
+import "../pages/button.css";
 
 export default function Header({ onNavigate }) {
   const [open, setOpen] = useState(false);
@@ -51,9 +52,9 @@ export default function Header({ onNavigate }) {
             </nav>
           )}
 
-          <a href="/booking" className="booking-btn booking-btn--desktop">
+<Link to="/booking" className="primary-btn booking-btn--desktop">
             Booking
-          </a>
+          </Link>
 
           {/* Hamburger only on Home */}
           {isHome && (
@@ -85,13 +86,9 @@ export default function Header({ onNavigate }) {
             </button>
 
             {/* Mobile booking inside dropdown */}
-            <a
-              href="/booking"
-              className="booking-btn booking-btn--mobile"
-              onClick={() => setOpen(false)}
-            >
+            <Link to="/booking" className="primary-btn booking-btn--mobile">
               Booking
-            </a>
+            </Link>
           </div>
         )}
       </div>

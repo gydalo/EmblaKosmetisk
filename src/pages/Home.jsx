@@ -5,6 +5,7 @@ import HomeSplitSection from "../components/HomeSplitSection";
 import "./home.css";
 import Footer from "../components/Footer";
 import Behandlinger from "../components/Behandlinger";
+import Gavekort from "../components/Gavekort";
 
 export default function Home() {
   const scrollerRef = useRef(null);
@@ -56,8 +57,12 @@ export default function Home() {
         <HomeSplitSection />
       </section>
 
-      <section className="snap snap-long" id="behandlinger">
+      <section className="snap" id="behandlinger">
         <Behandlinger />
+      </section>
+
+            <section className="snap" id="gavekort">
+        <Gavekort />
       </section>
 
       <section className="snap-footer" id="footer">

@@ -3,7 +3,7 @@
 }
 
 .home-snap {
-  height: 100vh;
+  height: 100%;
   height: 100svh;
   height: 100dvh;
 
@@ -21,10 +21,6 @@
   min-height: calc(100dvh - var(--header-h));
 }
 
-.snap-long {
-  min-height: auto;
-}
-
 .snap-free {
   scroll-snap-align: none;
   min-height: auto;
@@ -39,6 +35,15 @@
   scroll-snap-stop: normal;
   min-height: calc(100dvh - var(--header-h));
   min-height: auto;
+}
+
+section#behandlinger {
+  display: flex;
+}
+
+section#behandlinger > * {
+  flex: 1;
+  min-height: 0;
 }
 
 @media (max-width: 900px) {
