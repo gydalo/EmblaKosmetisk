@@ -23,7 +23,6 @@
   z-index: 10000;
 }
 
-
 /* Logo */
 .logo img {
   height: 40px;
@@ -229,7 +228,7 @@
   text-align: center;
 }
 
-/* Overlay behind dropdown (so you can tap to close) */
+/* Overlay behind dropdown */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -255,16 +254,16 @@
   .hero-logo {
     max-width: 220px;
   }
- .main-nav {
+  .main-nav {
     display: none;
   }
 
   /* booking button still visible on all pages */
   .booking-btn--desktop {
-    display: inline-block;
+    display: none;
   }
 
-  /* show hamburger only when it exists (we render it only on Home) */
+  /* show hamburger only when it exists */
   .hamburger {
     display: inline-flex;
     align-items: center;
@@ -272,13 +271,15 @@
   }
 
   .mobile-nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-height: 0;
     overflow: hidden;
     padding: 0 18px;
     border-bottom: 0;
     background: #fff;
-    transition: max-height 220ms ease, padding 220ms ease, border-bottom 220ms ease;
+    transition: max-height 220ms ease, padding 220ms ease,
+      border-bottom 220ms ease;
   }
 
   .mobile-nav.is-open {
@@ -287,9 +288,11 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 
-  /* mobile booking inside menu only (optional) */
+  /* mobile booking inside menu only */
   .booking-btn--mobile {
-    width: 100%;
+    align-self: center;
+    width: min(320px, 80%);
     text-align: center;
+    display: inline-block;
   }
 }

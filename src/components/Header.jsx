@@ -13,12 +13,10 @@ export default function Header({ onNavigate }) {
     setOpen(false);
   };
 
-  // Close when route changes
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  // Close with Escape
   useEffect(() => {
     const onKeyDown = (e) => {
       if (e.key === "Escape") setOpen(false);
@@ -53,14 +51,11 @@ export default function Header({ onNavigate }) {
             </nav>
           )}
 
-          {/* CTA always visible */}
-          {!isHome && (
-            <a href="/booking" className="booking-btn booking-btn--desktop">
-              Booking
-            </a>
-          )}
+          <a href="/booking" className="booking-btn booking-btn--desktop">
+            Booking
+          </a>
 
-          {/* Hamburger only on Home + small screens */}
+          {/* Hamburger only on Home */}
           {isHome && (
             <button
               type="button"
@@ -89,6 +84,7 @@ export default function Header({ onNavigate }) {
               Gavekort
             </button>
 
+            {/* Mobile booking inside dropdown */}
             <a
               href="/booking"
               className="booking-btn booking-btn--mobile"
@@ -100,7 +96,6 @@ export default function Header({ onNavigate }) {
         )}
       </div>
 
-      {/* Overlay only on Home */}
       {isHome && open && (
         <button
           className="menu-overlay"
