@@ -1,6 +1,6 @@
 .booking {
   background: #f3efe6;
-  padding: 80px 18px 90px;
+  padding: 100px 18px 96px;
 }
 
 .booking__inner {
@@ -13,7 +13,7 @@
   font-family: "Italiana", serif;
   font-weight: 400;
   letter-spacing: 0.04em;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 1.15;
   text-align: center;
 }

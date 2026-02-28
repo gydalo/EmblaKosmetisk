@@ -1,8 +1,6 @@
+import Behandlingsside from "../Behandlingsside";
+import { botoxPage } from "../../components/botox.page";
+
 export default function Botox() {
-  return (
-    <div>
-      <h1>Botox</h1>
-      <p>Her kan du lese om våre Botox-behandlinger.</p>
-    </div>
-  );
+  return <Behandlingsside page={botoxPage} />;
 }

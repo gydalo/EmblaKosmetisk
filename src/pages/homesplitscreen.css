@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 56px 42px;
+  padding: 20px 20px;
   padding-bottom: calc(56px + env(safe-area-inset-bottom));
 }
 
@@ -61,13 +61,8 @@
   }
 
   .home-split__image {
-    height: 45vh;
-
+    height: 55vh;
     background: #402e25;
-  }
-
-  .home-split__panel {
-    padding: 44px 20px;
   }
 
   .home-split__title {

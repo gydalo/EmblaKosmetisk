@@ -7,18 +7,17 @@ const DATA = [
     title: "Hudpleie",
     theme: "brown",
     items: [
-      { label: "Microneedling med Skinpen", href: "/behandlinger/skinpen" },
-      { label: "Kjemisk Peel", href: "/behandlinger/peel" },
-      { label: "Hudkonsultasjon", href: "/behandlinger/hudkonsultasjon" },
+      { label: "SkinPen microneedling", to: "/behandlinger/skinpen" },
+      { label: "Kjemisk peel", to: "/behandlinger/kjemisk-peel" },
+      { label: "Profhilo", to: "/behandlinger/profhilo" },
     ],
   },
   {
     title: "Velvære & estetikk",
     theme: "green",
     items: [
-      { label: "Rens og massasje", href: "/behandlinger/rens-massasje" },
-      { label: "Vipper / bryn", href: "/behandlinger/vipper-bryn" },
-      { label: "Botox / rynkebehandling", href: "/behandlinger/botox" },
+      { label: "Hvilepuls", to: "/behandlinger/hvilepuls" },
+      { label: "Botox / rynkebehandling", to: "/behandlinger/botox" },
     ],
   },
 ];
@@ -36,13 +35,13 @@ export default function Behandlinger() {
 
               <div className="behandlinger__buttons">
                 {cat.items.map((item) => (
-                  <a
+                  <Link
                     key={item.label}
-                    href={item.href}
+                    to={item.to}
                     className={`behandlinger__btn behandlinger__btn--${cat.theme}`}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -50,9 +49,9 @@ export default function Behandlinger() {
         </div>
 
         <div className="behandlinger__ctaWrap">
-            <Link to="/booking" className="primary-btn">
-              Book her
-            </Link>
+          <Link to="/booking" className="primary-btn">
+            Book her
+          </Link>
         </div>
       </div>
     </section>
