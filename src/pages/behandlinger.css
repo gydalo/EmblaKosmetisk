@@ -1,13 +1,19 @@
 .behandlinger {
   background: #f3efe6;
-  padding: 80px 18px 90px;
+  min-height: calc(100dvh - var(--header-h));
+  min-height: calc(100svh - var(--header-h));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px 18px;
 }
 
 .behandlinger__inner {
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
-
 .behandlinger__title {
   font-family: "Italiana", serif;
   font-weight: 400;
@@ -68,7 +74,7 @@
 }
 
 .behandlinger__btn--green {
-  background: #52694A;
+  background: #52694a;
 }
 
 .behandlinger__ctaWrap {

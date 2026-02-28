@@ -48,6 +48,6 @@ section#behandlinger > * {
 
 @media (max-width: 900px) {
   .home-snap {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
   }
 }
