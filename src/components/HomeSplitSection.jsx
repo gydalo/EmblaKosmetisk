@@ -14,8 +14,8 @@ export default function HomeSplitSection() {
           <h2 className="home-split__title">Velkommen til Embla kosmetisk</h2>
 
           <p className="home-split__text">
-            Hudpleieklinikk i hjertet av Forus. Her finner du hudforbedrende
-            behandlinger, med ro og naturlig velvære.
+            Vi tilbyr individuelt tilpassede hudprogram og behandlinger, for
+            alle hudtyper.
           </p>
           <Link className="primary-btn" to="/om">
             Om

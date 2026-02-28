@@ -46,7 +46,7 @@ section#behandlinger > * {
   min-height: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .home-snap {
     scroll-snap-type: none;
   }

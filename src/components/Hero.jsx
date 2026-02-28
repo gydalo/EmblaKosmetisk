@@ -2,7 +2,6 @@ import "../pages/header.css";
 import "../pages/button.css";
 import { Link } from "react-router-dom";
 
-
 export default function Hero() {
   return (
     <section
@@ -25,9 +24,9 @@ export default function Hero() {
         <div className="hero-right">
           <div className="hero-right-text">
             <p>
-              Medisinsk hudpleie i en kombinasjon av velvære.
+              Klinikk i hjertet av Forus.
               <br />
-              Høy kompetanse sans for det naturlige resultat.
+              Sertifisert kosmetisk sykepleier.
             </p>
             <br />
             <p className="hero-lead">Få det lille ekstra!</p>
