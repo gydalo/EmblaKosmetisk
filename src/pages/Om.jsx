@@ -28,7 +28,7 @@ export default function Om() {
             <div className="about__media about__media--left">
               <img
                 className="about__img"
-                src="/images/embla-svart-frakk.jpg"
+                src="/images/Embla-svart-frakk.jpg"
                 alt="Embla Lofthus"
               />
             </div>
