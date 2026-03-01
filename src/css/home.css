@@ -9,7 +9,7 @@
 
   overflow-y: auto;
 
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-padding-top: var(--header-h);
   overscroll-behavior-y: contain;
   -webkit-overflow-scrolling: touch;
