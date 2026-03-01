@@ -1,4 +1,4 @@
-import "./booking.css";
+import "../CSS/booking.css";
 import Header from "../components/Header";
 
 export default function Booking() {

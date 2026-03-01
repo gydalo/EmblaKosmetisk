@@ -1,7 +1,7 @@
-import "../pages/gavekort.css";
+import "../CSS/gavekort.css";
 import { Link } from "react-router-dom";
-import "../pages/button.css";
-import "../pages/button.css";
+import "../CSS/button.css";
+import "../CSS/button.css";
 
 export default function Gavekort() {
   return (

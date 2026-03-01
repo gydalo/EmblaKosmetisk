@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../pages/header.css";
-import "../pages/button.css";
+import "../CSS/header.css";
+import "../CSS/button.css";
 
 export default function Header({ onNavigate }) {
   const [open, setOpen] = useState(false);

@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import "./behandlingsside.css";
-import "../pages/button.css";
+import "../CSS/behandlingsside.css";
+import "../CSS/button.css";
 
 function Tilleggstjenester() {
   return (

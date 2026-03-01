@@ -1,6 +1,6 @@
-import "../pages/homesplitscreen.css";
+import "../CSS/homesplitscreen.css";
 import { Link } from "react-router-dom";
-import "../pages/button.css";
+import "../CSS/button.css";
 
 export default function HomeSplitSection() {
   return (
