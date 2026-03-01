@@ -21,17 +21,15 @@ body {
 h1,
 h2,
 h3,
-h4,
-button,
-.main-nav a,
-.booking-btn,
-.hero-btn {
+h4 {
   font-family: "Italiana", serif;
   letter-spacing: 0.08em;
   font-weight: 400;
 }
 
-p {
+p, .main-nav a,
+.booking-btn,
+.hero-btn {
   font-family: "Palanquin", sans-serif;
   line-height: 1.6;
 }

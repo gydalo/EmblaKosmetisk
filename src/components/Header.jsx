@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../CSS/header.css";
-import "../CSS/button.css";
+import "../css/header.css";
+import "../css/button.css";
 
 export default function Header({ onNavigate }) {
   const [open, setOpen] = useState(false);
@@ -52,7 +52,7 @@ export default function Header({ onNavigate }) {
             </nav>
           )}
 
-<Link to="/booking" className="primary-btn booking-btn--desktop">
+          <Link to="/booking" className="primary-btn booking-btn--desktop">
             Booking
           </Link>
 

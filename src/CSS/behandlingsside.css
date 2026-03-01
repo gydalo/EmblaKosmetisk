@@ -23,7 +23,6 @@
   max-width: 720px;
   margin: 0 auto 34px;
   text-align: center;
-  font-family: "Palanquin", sans-serif;
   font-size: 13px;
   line-height: 1.9;
   color: rgba(31, 31, 31, 0.78);
@@ -70,7 +69,7 @@
 .treat__text {
   max-width: 720px;
   margin: 0 auto 14px;
-  font-family: "Palanquin", sans-serif;
+
   font-size: 13px;
   line-height: 1.9;
   color: rgba(31, 31, 31, 0.78);
@@ -82,7 +81,7 @@
   margin: 0 auto 24px;
   padding: 0;
   list-style: none;
-  font-family: "Palanquin", sans-serif;
+
   font-size: 13px;
   line-height: 1.9;
   color: rgba(31, 31, 31, 0.78);

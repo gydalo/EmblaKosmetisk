@@ -1,5 +1,5 @@
-import "../CSS/header.css";
-import "../CSS/button.css";
+import "../css/header.css";
+import "../css/button.css";
 import { Link } from "react-router-dom";
 
 export default function Hero() {

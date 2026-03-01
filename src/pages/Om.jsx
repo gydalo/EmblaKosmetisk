@@ -1,7 +1,7 @@
 import Header from "../components/Header";
-import "../CSS/om.css";
+import "../css/om.css";
 import Footer from "../components/Footer";
-import "../CSS/index.css";
+import "../css/index.css";
 
 export default function Om() {
   return (

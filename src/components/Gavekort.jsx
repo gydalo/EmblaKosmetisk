@@ -1,12 +1,11 @@
-import "../CSS/gavekort.css";
+import "../css/gavekort.css";
 import { Link } from "react-router-dom";
-import "../CSS/button.css";
-import "../CSS/button.css";
+import "../css/button.css";
+import "../css/button.css";
 
 export default function Gavekort() {
   return (
     <main className="gavekort-page" aria-label="Gavekort">
-
       <div className="gavekort-bg" aria-hidden="true" />
 
       <div className="gavekort-overlay" aria-hidden="true" />
@@ -20,9 +19,9 @@ export default function Gavekort() {
           Gavekortet kan brukes på behandlinger og produkter.
         </p>
 
-     <Link to="/booking" className="primary-btn">
-       Kjøp gavekort her
-     </Link>
+        <Link to="/booking" className="primary-btn">
+          Kjøp gavekort her
+        </Link>
       </section>
     </main>
   );

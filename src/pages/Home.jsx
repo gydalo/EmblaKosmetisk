@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HomeSplitSection from "../components/HomeSplitSection";
-import "../CSS/home.css";
+import "../css/home.css";
 import Footer from "../components/Footer";
 import Behandlinger from "../components/Behandlinger";
 import Gavekort from "../components/Gavekort";

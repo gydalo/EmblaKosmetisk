@@ -1,6 +1,6 @@
-import "../CSS/Behandlinger.css";
+import "../css/Behandlinger.css";
 import { Link } from "react-router-dom";
-import "../CSS/button.css";
+import "../css/button.css";
 
 const DATA = [
   {
