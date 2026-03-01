@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Palanquin:wght@300;400;500&display=swap");
 
+
+
+
 html,
 body,
 #root {
@@ -72,3 +75,4 @@ p, .main-nav a,
   background: #74876e;
   cursor: pointer;
 }
+

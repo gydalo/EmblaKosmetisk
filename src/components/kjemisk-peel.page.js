@@ -3,7 +3,7 @@ export const kjemiskPeelPage = {
   title: "Kjemisk peel",
   intro:
     "Kjemisk peeling er en effektiv hudbehandling som bruker syrer (f.eks. AHA, BHA, TCA) for å fjerne øverste hudlag, fremme fornyelse, og forbedre tekstur, glød, pigmentering og urenheter. Behandlingen skaper en kontrollert skade, stimulerer kollagenproduksjon og gir en strammere, friskere hud.",
-  imageSrc: "/images/peel.jpg", // Midlertidig bilde
+  imageSrc: "/images/kjemisk-peel.avif",
   imageAlt: "Kjemisk peeling",
   sections: [
     {

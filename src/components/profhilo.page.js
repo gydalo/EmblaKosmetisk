@@ -3,7 +3,7 @@ export const profhiloPage = {
   title: "Profhilo",
   intro:
     "IBSA Profhilo (64 mg/2 ml) er en innovativ, injiserbar hudbehandling basert på høykonsentrert hyaluronsyre (HA) designet for å forbedre hudkvalitet, stramme opp slapp hud og øke fuktighetsnivået. Den skiller seg fra tradisjonelle fillere ved at den ikke gir kunstig volum, men heller bio-stimulerer huden til å regenerere seg selv.",
-  imageSrc: "/images/profhilo.jpg", // Midlertidig bilde
+  imageSrc: "/images/profhilo.jpeg",
   imageAlt: "Profhilo behandling",
   sections: [
     {

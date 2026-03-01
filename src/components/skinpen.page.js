@@ -3,7 +3,7 @@ export const skinpenPage = {
   title: "SkinPen",
   intro:
     "SKINPEN® PRECISION: La kroppens eget kollagen gjøre jobben – naturlig! SkinPen® Precision er verdens første FDA-godkjente microneedling-enhet. Dette er en medisinsk, minimalt invasiv behandling som fornyer huden ved å stimulere kollagenproduksjonen uten bruk av varme eller kjemikalier.",
-  imageSrc: "/images/skinpen.jpg", // Midlertidig bilde
+  imageSrc: "/images/skinpen-2.jpg",
   imageAlt: "SkinPen microneedling",
   sections: [
     {
