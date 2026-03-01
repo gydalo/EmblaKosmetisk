@@ -1,4 +1,4 @@
-import "../css/Behandlinger.css";
+import "../css/behandlinger.css";
 import { Link } from "react-router-dom";
 import "../css/button.css";
 
