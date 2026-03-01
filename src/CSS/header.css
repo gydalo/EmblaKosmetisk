@@ -133,13 +133,16 @@
 
 .hero-right p {
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.9;
   color: #ffffff;
 }
 
 .hero-lead {
   margin-top: 12px;
+}
+
+.hero-lead {
+font-weight: 500;
 }
 
 /* Mobile menu additions */

@@ -30,7 +30,7 @@
 }
 
 .behandlinger__subtitle {
-  font-family: "Italiana", serif;
+  font-family: "Palanquin", serif;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -54,11 +54,12 @@
   align-items: center;
   justify-content: center;
 
-  font-family: "Italiana", serif;
+  font-family: "Palanquin", serif;
   font-size: 16px;
   letter-spacing: 0.04em;
   text-decoration: none;
   color: #fff;
+
 
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
   transition: all 140ms ease;
