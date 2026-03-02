@@ -12,14 +12,15 @@ export const hvilepulsPage = {
         "Behandlingen er utviklet for å roe ned både kropp og sinn, og tilpasses din huds behov. Her kan du virkelig koble av og finne roen.",
       ],
       list: [
+        "Varighet: 75 minutter",
         "Skånsom rens (med mulighet for mild peel)",
         "Avslappende massasje av hode, nakke og bryst",
         "Kjølende og dypt hydrerende maske",
       ],
     },
     {
-      heading: "Pris og varighet",
-      paragraphs: ["Pris: 1 500 kr", "Varighet: 75 minutter"],
+      heading: "Pris",
+      paragraphs: ["Pris: 1 500 kr"],
     },
     {
       heading: "Hvilepuls Mini",

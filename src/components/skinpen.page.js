@@ -15,6 +15,14 @@ export const skinpenPage = {
       ],
     },
     {
+      heading: "Pris",
+      list: [
+        "Skinpen Ansikt – 1990 kr",
+        "Skinpen Kropp – 2200 kr",
+        "Skinpen Deluxe – 2790 kr",
+      ],
+    },
+    {
       heading: "Behandlingsforløp",
       list: [
         "Varighet: 30–60 minutter.",
