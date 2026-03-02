@@ -147,6 +147,11 @@
   font-weight: 500;
 }
 
+.booking-btn--desktop.is-hidden-but-keeps-space {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Mobile menu additions */
 
 /* Hide hamburger on desktop */

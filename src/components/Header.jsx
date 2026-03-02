@@ -9,6 +9,7 @@ export default function Header({ onNavigate }) {
   const navigate = useNavigate();
 
   const isHome = location.pathname === "/";
+  const isBooking = location.pathname.startsWith("/booking");
 
   const go = (id) => {
     setOpen(false);
@@ -16,7 +17,7 @@ export default function Header({ onNavigate }) {
     if (isHome) {
       onNavigate?.(id);
 
-      window.history.replaceState(window.history.state, "", `#${id}`);
+      window.history.replaceState(window.history.state, "", `/#${id}`);
     } else {
       navigate(`/#${id}`);
     }
@@ -38,6 +39,7 @@ export default function Header({ onNavigate }) {
     <header className="site-header">
       <div className="topbar">
         <div className="topbar-inner">
+          {/* Logo */}
           <Link to="/" className="logo" onClick={() => setOpen(false)}>
             <img
               src="/images/Embla_Kosmetisk-02.png"
@@ -45,7 +47,7 @@ export default function Header({ onNavigate }) {
             />
           </Link>
 
-          {/* NAV on all pages */}
+          {/* Desktop Navigation */}
           <nav className="main-nav" aria-label="Hovedmeny">
             <button type="button" onClick={() => go("welcome")}>
               Om
@@ -58,11 +60,22 @@ export default function Header({ onNavigate }) {
             </button>
           </nav>
 
-          <Link to="/booking" className="primary-btn booking-btn--desktop">
+          {/* Desktop Booking Button (hidden on booking page) */}
+          <Link
+            to="/booking"
+            className={`primary-btn booking-btn--desktop ${
+              isBooking ? "is-hidden-but-keeps-space" : ""
+            }`}
+            aria-hidden={isBooking}
+            tabIndex={isBooking ? -1 : 0}
+            onClick={(e) => {
+              if (isBooking) e.preventDefault();
+            }}
+          >
             Booking
           </Link>
 
-          {/* Hamburger on all pages */}
+          {/* Hamburger */}
           <button
             type="button"
             className={`hamburger ${open ? "is-open" : ""}`}
@@ -76,7 +89,7 @@ export default function Header({ onNavigate }) {
           </button>
         </div>
 
-        {/* Mobile dropdown on all pages */}
+        {/* Mobile Dropdown */}
         <div className={`mobile-nav ${open ? "is-open" : ""}`}>
           <button type="button" onClick={() => go("welcome")}>
             Om
@@ -88,16 +101,19 @@ export default function Header({ onNavigate }) {
             Gavekort
           </button>
 
-          <Link
-            to="/booking"
-            className="primary-btn booking-btn--mobile"
-            onClick={() => setOpen(false)}
-          >
-            Booking
-          </Link>
+          {!isBooking && (
+            <Link
+              to="/booking"
+              className="primary-btn booking-btn--mobile"
+              onClick={() => setOpen(false)}
+            >
+              Booking
+            </Link>
+          )}
         </div>
       </div>
 
+      {/* Overlay */}
       {open && (
         <button
           className="menu-overlay"
