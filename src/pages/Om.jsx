@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import "../css/om.css";
+import Footer from "../components/Footer";
 
 export default function Om() {
   return (
