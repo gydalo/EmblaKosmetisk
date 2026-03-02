@@ -71,7 +71,7 @@ export default function Om() {
             <div className="about__media about__media--right">
               <img
                 className="about__img"
-                src="/images/theskin.jpg"
+                src="/images/sapiens.jpg"
                 alt="Klinikken"
               />
             </div>
