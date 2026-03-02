@@ -31,20 +31,13 @@
 /* Navigation */
 .main-nav {
   display: flex;
-  gap: 32px;
+  gap: 5rem;
 }
 
-.main-nav a {
-  font-weight: 600;
+.site-header .main-nav button {
   font-size: 1rem;
+  font-weight: 500;
   letter-spacing: 0.12em;
-  color: #222;
-  text-decoration: none;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 6px;
 }
 
 .main-nav button {
@@ -53,12 +46,13 @@
   padding: 0;
   cursor: pointer;
   color: #222;
-  font-size: 13px;
+  font-size: 1.5rem;
   letter-spacing: 0.12em;
   font-family: "Italiana", serif;
 }
 .main-nav button:hover {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.25px;
   text-underline-offset: 6px;
 }
 

@@ -58,7 +58,7 @@ export default function Om() {
                 Farstad Profilsystemer. Parker på parkering merket med Tibnor.
                 På høyre siden av inngangen merket med Farstad, kan du finne
                 inngangen til Sapiens. Følg trappene opp og til venstre for
-                resepsjonen
+                resepsjonen.
               </p>
             <p className="about__p">
                 Lokalet er lyst, moderne og innbydende, med en egen resepsjon
