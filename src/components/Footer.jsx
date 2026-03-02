@@ -14,9 +14,9 @@ export default function Footer() {
 
         <div className="footer__info">
           <p className="footer__name">Embla Kosmetisk</p>
-          <p>Gamleveien 8, 4031 Stavanger</p>
+          <p>Gamle Forusveien 8, 4031 Stavanger</p>
           <p>
-            <a href="mailto:emblakds@gmail.com">emblakds@gmail.com</a>
+            <a href="mailto:embla.kds@gmail.com">embla.kds@gmail.com</a>
           </p>
           <p>
             <a href="tel:+4792666617">+47 926 66 617</a>
