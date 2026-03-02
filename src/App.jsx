@@ -7,6 +7,8 @@ import Profhilo from "./pages/behandlinger/Profhilo";
 import Skinpen from "./pages/behandlinger/Skinpen";
 import KjemiskPeel from "./pages/behandlinger/KjemiskPeel";
 import HvilePuls from "./pages/behandlinger/Hvilepuls";
+import FargingAvVipperBryn from "./pages/behandlinger/Farging-vipper-bryn";
+import Laser from "./pages/behandlinger/Laser";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="/behandlinger/skinpen" element={<Skinpen />} />
         <Route path="/behandlinger/kjemisk-peel" element={<KjemiskPeel />} />
         <Route path="/behandlinger/hvilepuls" element={<HvilePuls />} />
+        <Route path="/behandlinger/farging-av-vipper-bryn" element={<FargingAvVipperBryn />} />
+        <Route path="/behandlinger/laser" element={<Laser />} />
       </Routes>
     </Router>
   );

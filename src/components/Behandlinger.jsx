@@ -4,20 +4,22 @@ import "../css/button.css";
 
 const DATA = [
   {
-    title: "Hudpleie",
+    title: "Injeksjonsbehandlinger",
     theme: "brown",
     items: [
-      { label: "SkinPen microneedling", to: "/behandlinger/skinpen" },
-      { label: "Kjemisk peel", to: "/behandlinger/kjemisk-peel" },
       { label: "Profhilo", to: "/behandlinger/profhilo" },
+      { label: "Botox / rynkebehandling", to: "/behandlinger/botox" },
     ],
   },
   {
-    title: "Velvære & estetikk",
+    title: "Hudbehandlinger",
     theme: "green",
     items: [
+      { label: "SkinPen microneedling", to: "/behandlinger/skinpen" },
+      { label: "Kjemisk peel", to: "/behandlinger/kjemisk-peel" },
       { label: "Hvilepuls", to: "/behandlinger/hvilepuls" },
-      { label: "Botox / rynkebehandling", to: "/behandlinger/botox" },
+      { label: "Laser", to: "/behandlinger/laser" },
+      { label: "Farging av vipper/ bryn", to: "/behandlinger/farging-av-vipper-bryn" },
     ],
   },
 ];
