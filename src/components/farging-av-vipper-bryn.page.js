@@ -7,8 +7,8 @@ export const fargingAvVipperBrynPage = {
   imageAlt: "Farging av vipper og bryn",
   sections: [
     {
-      heading: "Pris og varighet",
-      paragraphs: ["Pris: 100 kr", "Varighet: 10 minutter"],
+      heading: "Pris",
+      prices: [{ name: "Farging av vipper / bryn", price: "100 kr" }],
     },
   ],
 };

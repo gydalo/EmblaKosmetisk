@@ -19,11 +19,11 @@ export const profhiloPage = {
         "Resultater: Full effekt ses vanligvis 4–6 uker etter andre behandling og varer ca. 6–12 måneder.",
       ],
     },
-        {
+    {
       heading: "Pris",
-      list: [
-        "Profhilo 1 behandling – 3400 kr",
-        "Profhilo 2 behandling – 3100 kr",
+      prices: [
+        { name: "Profhilo 1 behandling", price: "3400 kr" },
+        { name: "Profhilo 2 behandling", price: "3100 kr" },
       ],
     },
     {

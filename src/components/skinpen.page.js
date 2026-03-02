@@ -16,10 +16,10 @@ export const skinpenPage = {
     },
     {
       heading: "Pris",
-      list: [
-        "Skinpen Ansikt – 1990 kr",
-        "Skinpen Kropp – 2200 kr",
-        "Skinpen Deluxe – 2790 kr",
+      prices: [
+        { name: "Skinpen Ansikt", price: "1990 kr" },
+        { name: "Skinpen Kropp", price: "2200 kr" },
+        { name: "Skinpen Deluxe", price: "2790 kr" },
       ],
     },
     {

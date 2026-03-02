@@ -17,14 +17,14 @@ export const kjemiskPeelPage = {
         "Utførelse: Syren pensles på i klinikk, virker i noen minutter og nøytraliseres, eller tas av hjemme (avhenger av type).",
       ],
     },
-     {
-      heading: "Pris",
-      list: [
-        "Bio C – 600 kr",
-        "Mandelage – 500 kr",
-        "Lightening Peel – 600 kr",
-        "Kjemisk Peel Deluxe - 1600 kr"
-      ],
-    },
+{
+  heading: "Pris",
+  prices: [
+    { name: "Bio C", price: "600 kr" },
+    { name: "Mandelage", price: "500 kr" },
+    { name: "Lightening Peel", price: "600 kr" },
+    { name: "Kjemisk Peel Deluxe", price: "1600 kr" },
+  ],
+},
   ],
 };

@@ -27,7 +27,7 @@ export default function Om() {
             <div className="about__media about__media--left">
               <img
                 className="about__img"
-                src="/images/Embla-svart-frakk.jpg"
+                src="/images/Embla-hvit-frakk.jpg"
                 alt="Embla Lofthus"
               />
             </div>
@@ -49,23 +49,24 @@ export default function Om() {
             </div>
           </section>
 
-          <section className="about__section about__section--bottom">
+          <section className="about__section about__section--bottom about__section--top">
             <div className="about__text about__text--left">
               <h2 className="about__heading">Klinikken</h2>
 
-              <p className="about__p">
-                Klinikken holder til et av lokalene til Sapiens, på Gamleveien
-                8. Sapiens er et moderne skjønnhets- og velvære-konsept der
-                flere fagpersoner innen skjønnhetsbransjen samles under ett tak.
-                Her er det lagt vekt på et behagelig miljø, med fokus på
-                kvalitet og velvære.
+             <p className="about__p">
+                Klinikken finner du på Gamle Forusveien 8, i bygget sammen med
+                Farstad Profilsystemer. Parker på parkering merket med Tibnor.
+                På høyre siden av inngangen merket med Farstad, kan du finne
+                inngangen til Sapiens. Følg trappene opp og til venstre for
+                resepsjonen
               </p>
-
-              <p className="about__p">
+            <p className="about__p">
                 Lokalet er lyst, moderne og innbydende, med en egen resepsjon
                 hvor du kan sette deg ned og hente deg noe å drikke mens du
                 venter på timen din.
               </p>
+            
+
             </div>
 
             <div className="about__media about__media--right">

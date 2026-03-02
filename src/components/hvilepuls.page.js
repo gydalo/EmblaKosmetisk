@@ -20,7 +20,7 @@ export const hvilepulsPage = {
     },
     {
       heading: "Pris",
-      paragraphs: ["Pris: 1 500 kr"],
+      prices: [{ name: "Hvilepuls", price: "1 500 kr" }],
     },
     {
       heading: "Hvilepuls Mini",

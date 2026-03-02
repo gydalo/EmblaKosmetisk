@@ -73,6 +73,17 @@ export default function BehandlingPage({ page }) {
                 </p>
               ))}
 
+              {s.prices?.length ? (
+                <div className="treat__priceList">
+                  {s.prices.map((item) => (
+                    <div key={item.name} className="treat__priceRow">
+                      <span className="treat__priceName">{item.name}</span>
+                      <span className="treat__priceValue">{item.price}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+
               {s.list?.length ? (
                 <ul className="treat__list">
                   {s.list.map((li) => (
