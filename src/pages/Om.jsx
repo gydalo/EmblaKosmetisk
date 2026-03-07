@@ -49,54 +49,89 @@ export default function Om() {
             </div>
           </section>
 
-          <section className="about__section about__section--bottom about__section--top">
-            <div className="about__text about__text--left">
-              <h2 className="about__heading">Klinikken</h2>
-
-             <p className="about__p">
-                Klinikken finner du på Gamle Forusveien 8, i bygget sammen med
-                Farstad Profilsystemer. Parker på parkering merket med Tibnor.
-                På høyre siden av inngangen merket med Farstad, kan du finne
-                inngangen til Sapiens. Følg trappene opp og til venstre for
-                resepsjonen.
-              </p>
-            <p className="about__p">
-                Lokalet er lyst, moderne og innbydende, med en egen resepsjon
-                hvor du kan sette deg ned og hente deg noe å drikke mens du
-                venter på timen din.
-              </p>
-            
-
-            </div>
-
-            <div className="about__media about__media--right">
-              <img
-                className="about__img"
-                src="/images/sapiens.jpg"
-                alt="Klinikken"
-              />
-            </div>
-          </section>
-
           <section className="about__section about__section--top about__section--responsible">
-            <div className="about__media about__media--left">
-              <img
-                className="about__img"
-                src="/images/irina.jpg"
-                alt="Dr. Irina Magdalena Ibănescu"
-              />
-            </div>
-
-            <div className="about__text about__text--right">
+            <div className="about__text about__text--left">
               <h2 className="about__heading">Faglig ansvar</h2>
 
               <p className="about__p">
                 Klinikkens ansvarlige lege er Dr. Irina Magdalena Ibănescu.
               </p>
             </div>
+
+            <div className="about__media about__media--right">
+              <img
+                className="about__img"
+                src="/images/irina.jpg"
+                alt="Dr. Irina Magdalena Ibănescu"
+              />
+            </div>
           </section>
 
-          <section className="about__notice" aria-label="Viktig informasjon">
+          <section className="about__section about__section--bottom about__section--top">
+            <div className="about__media about__media--left">
+              <img
+                className="about__img"
+                src="/images/sapiens.jpg"
+                alt="Klinikken"
+              />
+            </div>
+
+            <div className="about__text about__text--right">
+              <h2 className="about__heading">Klinikken</h2>
+              <p className="about__p">
+                Lokalet holder til i Sapiens sine lokaler på Gamle Forusveien 8.
+                Sapiens er et moderne skjønnhets- og velvære-konsept hvor flere
+                fagpersoner innen skjønnhets- og hudbehandlinger holder til
+                under samme tak.
+              </p>
+              <p className="about__p">
+                Lokalet er lyst, moderne og innbydende, med en egen resepsjon
+                hvor du kan sette deg ned og hente deg noe å drikke mens du
+                venter på timen din.
+              </p>
+            </div>
+          </section>
+
+          <section className="about__location">
+            <div className="about__locationCard">
+              <div className="about__locationText">
+                <h2 className="about__heading">Hvor finner du oss?</h2>
+
+                <p className="about__p about__p--wide">
+                  Klinikken finner du på Gamle Forusveien 8, i bygget sammen med
+                  Farstad Profilsystemer. Parker på parkering merket med Tibnor.
+                  På høyre siden av inngangen merket med Farstad, kan du finne
+                  inngangen til Sapiens. Følg trappene opp og til venstre for
+                  resepsjonen.
+                </p>
+              </div>
+
+              <div className="about__locationGallery">
+                <img
+                  className="about__locationImg"
+                  src="/images/klinikk-ute-1.jpg"
+                  alt="Området utenfor klinikken"
+                />
+                <img
+                  className="about__locationImg"
+                  src="/images/klinikk-ute-2.jpg"
+                  alt="Inngang til klinikken"
+                />
+                <img
+                  className="about__locationImg"
+                  src="/images/klinikk-ute-3.jpg"
+                  alt="Inngang til klinikken"
+                />
+                <img
+                  className="about__locationImg"
+                  src="/images/klinikk-hovedinngang.jpg"
+                  alt="Inngang til klinikken"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section className="about__notice">
             <h2 className="about__heading about__heading--center">
               Viktig informasjon
             </h2>
