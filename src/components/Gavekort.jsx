@@ -19,7 +19,7 @@ export default function Gavekort() {
           Gavekortet kan brukes på behandlinger og produkter.
         </p>
 
-        <Link to="/booking" className="primary-btn">
+        <Link to="/gavekort" className="primary-btn">
           Kjøp gavekort her
         </Link>
       </section>

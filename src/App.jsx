@@ -9,6 +9,7 @@ import KjemiskPeel from "./pages/behandlinger/KjemiskPeel";
 import HvilePuls from "./pages/behandlinger/Hvilepuls";
 import FargingAvVipperBryn from "./pages/behandlinger/Farging-vipper-bryn";
 import Laser from "./pages/behandlinger/Laser";
+import Gavekort from "./pages/Gavekort";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/behandlinger/hvilepuls" element={<HvilePuls />} />
         <Route path="/behandlinger/farging-av-vipper-bryn" element={<FargingAvVipperBryn />} />
         <Route path="/behandlinger/laser" element={<Laser />} />
+        <Route path="/gavekort" element={<Gavekort />} />
       </Routes>
     </Router>
   );
